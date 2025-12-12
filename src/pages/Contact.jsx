@@ -20,7 +20,7 @@ export default function Contact() {
         <div className="w-20 h-1 bg-yellow-500 rounded-lg mx-auto mb-6"></div>
 
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide mb-6">
-          Contact <span className="text-yellow-400">Advocate Subhan</span>
+          Contact <span className="text-yellow-400">Advocate Abdul Subhan</span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-16">

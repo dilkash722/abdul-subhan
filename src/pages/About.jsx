@@ -19,7 +19,7 @@ export default function About() {
 
         {/* HEADING */}
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide mb-6">
-          About Advocate <span className="text-yellow-400">Abdus Subhan</span>
+          About Advocate <span className="text-yellow-400">Abdul Subhan</span>
         </h1>
 
         {/* DESCRIPTION */}
