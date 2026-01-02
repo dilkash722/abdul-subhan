@@ -42,14 +42,13 @@ export default function Home() {
 
             {/* Heading – always 2 lines */}
             <h1 className="font-extrabold mb-5">
-              <span className="block text-4xl sm:text-5xl md:text-6xl leading-tight whitespace-nowrap">
+              <span className="block text-4xl sm:text-5xl md:text-6xl leading-snug md:leading-tight md:whitespace-nowrap">
                 Trusted & Experienced
               </span>
-              <span className="block text-4xl sm:text-5xl md:text-6xl leading-tight text-yellow-400">
+              <span className="block text-4xl sm:text-5xl md:text-6xl leading-snug md:leading-tight text-yellow-400">
                 Legal Counsel
               </span>
             </h1>
-
             {/* Paragraph */}
             <p className="text-base sm:text-lg text-gray-200 leading-relaxed max-w-2xl mb-8">
               Providing ethical, result-driven and client-focused legal services
