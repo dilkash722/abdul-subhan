@@ -29,8 +29,9 @@ export default function Home() {
         {/* ================= HERO ================= */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-16 items-center">
           {/* LEFT CONTENT */}
-          <div className="text-center md:text-left">
-            <h3 className="text-sm sm:text-base md:text-lg text-yellow-400 font-semibold mb-3">
+          <div className="text-left">
+            {/* Typewriter */}
+            <h3 className="text-xs sm:text-sm md:text-lg text-yellow-400 font-semibold mb-3">
               <Typewriter
                 words={["Hello,", "I am Advocate Abdul Subhan"]}
                 loop={false}
@@ -39,6 +40,7 @@ export default function Home() {
               />
             </h3>
 
+            {/* Heading – always 2 lines */}
             <h1 className="font-extrabold mb-5">
               <span className="block text-4xl sm:text-5xl md:text-6xl leading-tight whitespace-nowrap">
                 Trusted & Experienced
@@ -48,7 +50,8 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="text-base sm:text-lg text-gray-200 leading-relaxed max-w-2xl mx-auto md:mx-0 mb-8">
+            {/* Paragraph */}
+            <p className="text-base sm:text-lg text-gray-200 leading-relaxed max-w-2xl mb-8">
               Providing ethical, result-driven and client-focused legal services
               with strong courtroom experience and professional integrity.
               <br />
@@ -61,35 +64,36 @@ export default function Home() {
 
             {/* PRACTICE AREAS */}
             <div
-              className="grid grid-cols-2 md:grid-cols-4
-              gap-x-8 gap-y-7
-              mb-10
-              text-sm sm:text-base text-gray-300
+              className="
+                grid grid-cols-2 md:grid-cols-4
+                gap-x-8 gap-y-7
+                mb-10
+                text-sm sm:text-base text-gray-300
               "
             >
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 w-full min-h-[36px]">
                 <Gavel className="w-5 h-5 text-yellow-400 shrink-0" />
                 <span className="whitespace-nowrap">Criminal Law</span>
               </div>
 
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 w-full min-h-[36px]">
                 <Scale className="w-5 h-5 text-yellow-400 shrink-0" />
                 <span className="whitespace-nowrap">Civil Law</span>
               </div>
 
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 w-full min-h-[36px]">
                 <ShieldCheck className="w-5 h-5 text-yellow-400 shrink-0" />
                 <span className="whitespace-nowrap">Family Disputes</span>
               </div>
 
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 w-full min-h-[36px]">
                 <HomeIcon className="w-5 h-5 text-yellow-400 shrink-0" />
                 <span className="whitespace-nowrap">Property Matters</span>
               </div>
             </div>
 
             {/* BUTTONS */}
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center md:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
               <a
                 href="tel:+919631499719"
                 className="inline-flex items-center justify-center gap-3 px-8 py-3
