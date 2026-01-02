@@ -1,4 +1,5 @@
 import { useState } from "react";
+import subhanImg from "../assets/subhan.jpeg";
 
 export default function Navbar({ activeSection }) {
   const [open, setOpen] = useState(false);
@@ -21,9 +22,9 @@ export default function Navbar({ activeSection }) {
         {/* LEFT: PROFILE */}
         <div className="flex items-center gap-3">
           <img
-            src="https://scontent.fpat2-1.fna.fbcdn.net/v/t39.30808-6/489225569_2950005748502464_8449418859577968424_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DwGvkzSqnjUQ7kNvwHzEF34&_nc_oc=AdmMYsIxFUf-vH5hjq9eRrXtNiqXm1T07LSB6kppmtPGCRKhjvqQWzUlrlbT_X10pJMeOa9eHbqSfbE2XMsNfyTi&_nc_zt=23&_nc_ht=scontent.fpat2-1.fna&_nc_gid=ftnGuzYwGFovDDJ7a2rhGw&oh=00_AflU5J4JXjpkNG0d5HKFNy_UpUt6RyTWgQ0SJ6YbgNDliQ&oe=693FE08E"
-            alt="Advocate Abdus Subhan"
-            className="h-12 w-12 rounded-full object-cover border border-yellow-500"
+            src={subhanImg}
+            alt="Advocate Abdul Subhan"
+            className="h-12 w-12 rounded-full object-cover object-[50%_35%] border border-yellow-500"
           />
           <div>
             <h1 className="text-lg font-bold text-white leading-tight">

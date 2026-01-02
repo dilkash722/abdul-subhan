@@ -53,7 +53,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-4">
           {/* CALL BUTTON with ICON */}
           <a
-            href="tel:+91XXXXXXXXXX"
+            href="tel:+919631499719"
             className="px-10 py-3 rounded-lg text-lg font-semibold bg-yellow-500 text-black 
             hover:bg-yellow-600 transition-transform duration-300 shadow-xl transform hover:scale-105 flex items-center justify-center gap-2"
           >
@@ -71,7 +71,7 @@ export default function Home() {
 
           {/* WHATSAPP BUTTON with ICON */}
           <a
-            href="https://wa.me/91XXXXXXXXXX"
+            href="https://wa.me/919631499719"
             className="px-10 py-3 rounded-lg text-lg font-semibold bg-green-600 text-white 
             hover:bg-green-700 transition-transform duration-300 shadow-xl transform hover:scale-105 flex items-center justify-center gap-2"
           >
