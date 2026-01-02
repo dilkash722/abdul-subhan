@@ -1,92 +1,173 @@
 import { Typewriter } from "react-simple-typewriter";
+import {
+  PhoneCall,
+  MessageCircle,
+  Scale,
+  Gavel,
+  Home as HomeIcon,
+  ShieldCheck,
+  Target,
+  Lock,
+} from "lucide-react";
+import subhanImg from "../assets/subhan.jpeg";
 
 export default function Home() {
   return (
-    <div
-      className="relative min-h-screen w-full flex items-center px-6 pt-6 pb-10 md:pt-10 md:pb-12 text-white"
+    <section
+      className="relative min-h-screen w-full flex items-center px-5 sm:px-6 py-16 md:py-20 text-white"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1762081512133-30202f928bb9?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+          "url('https://images.unsplash.com/photo-1762081512133-30202f928bb9?q=80&w=1332&auto=format&fit=crop')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      {/* Dark Opacity Layer */}
-      <div className="absolute inset-0 bg-black/80 backdrop-blur-[1px]"></div>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/85" />
 
-      {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto">
-        {/* Intro Typewriter */}
-        <h3 className="text-xl md:text-2xl text-yellow-400 font-semibold mb-3">
-          <Typewriter
-            words={["Hello,", "I am Advocate Abdul Subhan"]}
-            loop={false}
-            cursor
-            cursorStyle="|"
-            typeSpeed={60}
-            deleteSpeed={40}
-            delaySpeed={900}
-          />
-        </h3>
+      <div className="relative z-10 max-w-6xl mx-auto w-full">
+        {/* ================= HERO ================= */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-16 items-center">
+          {/* LEFT CONTENT */}
+          <div className="text-center md:text-left">
+            <h3 className="text-sm sm:text-base md:text-lg text-yellow-400 font-semibold mb-3">
+              <Typewriter
+                words={["Hello,", "I am Advocate Abdul Subhan"]}
+                loop={false}
+                cursor
+                typeSpeed={60}
+              />
+            </h3>
 
-        {/* Main Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-5 drop-shadow-xl">
-          Professional & Trusted Legal Counsel
-          <br />
-          <span className="text-yellow-400">
-            Criminal • Civil • Family • Property Law
-          </span>
-        </h1>
+            <h1 className="font-extrabold mb-5">
+              <span className="block text-4xl sm:text-5xl md:text-6xl leading-tight whitespace-nowrap">
+                Trusted & Experienced
+              </span>
+              <span className="block text-4xl sm:text-5xl md:text-6xl leading-tight text-yellow-400">
+                Legal Counsel
+              </span>
+            </h1>
 
-        {/* Description */}
-        <p
-          className="max-w-3xl text-lg md:text-xl text-gray-200 leading-relaxed mb-8 bg-black/25 
-          backdrop-blur-md p-6 rounded-lg border border-white/10 shadow-xl"
-        >
-          I deliver ethical, focused and result-driven legal representation.
-          With deep courtroom experience and commitment to justice, I support
-          clients in navigating complex legal challenges with clarity and
-          confidence.
-        </p>
+            <p className="text-base sm:text-lg text-gray-200 leading-relaxed max-w-2xl mx-auto md:mx-0 mb-8">
+              Providing ethical, result-driven and client-focused legal services
+              with strong courtroom experience and professional integrity.
+              <br />
+              Committed to protecting client rights through diligent legal
+              representation and well-planned case strategy.
+              <br />
+              Every matter is handled with clarity, confidentiality and a
+              thorough understanding of applicable law.
+            </p>
 
-        {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4">
-          {/* CALL BUTTON with ICON */}
-          <a
-            href="tel:+919631499719"
-            className="px-10 py-3 rounded-lg text-lg font-semibold bg-yellow-500 text-black 
-            hover:bg-yellow-600 transition-transform duration-300 shadow-xl transform hover:scale-105 flex items-center justify-center gap-2"
-          >
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
+            {/* PRACTICE AREAS */}
+            <div
+              className="grid grid-cols-2 md:grid-cols-4
+              gap-x-8 gap-y-7
+              mb-10
+              text-sm sm:text-base text-gray-300
+              "
             >
-              <path d="M2.25 6.75c0 8.284 6.716 15 15 15 .966 0 1.75-.784 1.75-1.75v-2.1c0-.72-.47-1.35-1.16-1.54l-3.03-.84a1.75 1.75 0 0 0-1.72.45l-.9.9a12.56 12.56 0 0 1-5.27-5.27l.9-.9a1.75 1.75 0 0 0 .45-1.72l-.84-3.03c-.19-.69-.82-1.16-1.54-1.16h-2.1C3.03 5 2.25 5.784 2.25 6.75z" />
-            </svg>
-            Call Now
-          </a>
+              <div className="flex items-center gap-3">
+                <Gavel className="w-5 h-5 text-yellow-400 shrink-0" />
+                <span className="whitespace-nowrap">Criminal Law</span>
+              </div>
 
-          {/* WHATSAPP BUTTON with ICON */}
-          <a
-            href="https://wa.me/919631499719"
-            className="px-10 py-3 rounded-lg text-lg font-semibold bg-green-600 text-white 
-            hover:bg-green-700 transition-transform duration-300 shadow-xl transform hover:scale-105 flex items-center justify-center gap-2"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              className="h-6 w-6"
-              fill="currentColor"
-            >
-              <path d="M16 .6C7.5.6.6 7.5.6 16c0 2.8.8 5.5 2.2 7.9L0 32l8.4-2.7c2.3 1.3 5 2 7.6 2 8.5 0 15.4-6.9 15.4-15.4C31.4 7.5 24.5.6 16 .6zm0 28c-2.4 0-4.7-.6-6.8-1.8l-.5-.3-5 1.6 1.6-4.9-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.3 6-13.3 13.3-13.3s13.3 6 13.3 13.3S23.3 28.6 16 28.6zm7.2-10.7c-.4-.2-2.4-1.2-2.8-1.4-.4-.2-.7-.2-1 .2-.3.3-1.2 1.4-1.4 1.7-.2.3-.5.3-.9.1-.4-.2-1.7-.6-3.2-2-1.2-1.1-2-2.4-2.3-2.8-.2-.4-.02-.6.17-.8.18-.18.4-.46.6-.7.2-.24.3-.4.46-.7.15-.3.08-.5 0-.7-.1-.2-.9-2.2-1.2-3.1-.3-.9-.6-.8-.9-.9h-.7c-.2 0-.7.1-1.1.6-.4.5-1.4 1.4-1.4 3.4 0 2 .1 3.4 2.1 5.7 2 2.3 4.8 3.9 7.2 4.5.7.2 1.3.2 1.8.1.6-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.7-.1-.2-.3-.3-.7-.5z" />
-            </svg>
-            WhatsApp
-          </a>
+              <div className="flex items-center gap-3">
+                <Scale className="w-5 h-5 text-yellow-400 shrink-0" />
+                <span className="whitespace-nowrap">Civil Law</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <ShieldCheck className="w-5 h-5 text-yellow-400 shrink-0" />
+                <span className="whitespace-nowrap">Family Disputes</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <HomeIcon className="w-5 h-5 text-yellow-400 shrink-0" />
+                <span className="whitespace-nowrap">Property Matters</span>
+              </div>
+            </div>
+
+            {/* BUTTONS */}
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center md:justify-start">
+              <a
+                href="tel:+919631499719"
+                className="inline-flex items-center justify-center gap-3 px-8 py-3
+                rounded-lg bg-yellow-500 text-black font-semibold shadow-lg
+                hover:bg-yellow-600 transition"
+              >
+                <PhoneCall className="w-5 h-5" />
+                Call for Consultation
+              </a>
+
+              <a
+                href="https://wa.me/919631499719"
+                className="inline-flex items-center justify-center gap-3 px-8 py-3
+                rounded-lg bg-green-600 text-white font-semibold shadow-lg
+                hover:bg-green-700 transition"
+              >
+                <MessageCircle className="w-5 h-5" />
+                WhatsApp Enquiry
+              </a>
+            </div>
+          </div>
+
+          {/* RIGHT PROFILE / AVATAR */}
+          <div className="flex justify-center md:justify-end mt-10 md:mt-0">
+            <div className="text-center">
+              <img
+                src={subhanImg}
+                alt="Advocate Abdul Subhan"
+                className="
+                  w-52 h-52
+                  sm:w-60 sm:h-60
+                  md:w-64 md:h-64
+                  rounded-full object-cover
+                  border-4 border-yellow-500
+                  shadow-2xl mx-auto
+                "
+              />
+              <h4 className="mt-5 text-lg sm:text-xl font-semibold">
+                Advocate Abdul Subhan
+              </h4>
+              <p className="text-sm text-gray-300">Legal Practitioner</p>
+            </div>
+          </div>
+        </div>
+
+        {/* ================= TRUST HIGHLIGHTS ================= */}
+        <div className="mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
+            <Scale className="w-6 h-6 text-yellow-400 mx-auto mb-3" />
+            <h3 className="text-yellow-400 font-semibold text-lg mb-2">
+              Professional Legal Advice
+            </h3>
+            <p className="text-sm text-gray-300">
+              Clear guidance with honest evaluation of legal matters.
+            </p>
+          </div>
+
+          <div className="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
+            <Target className="w-6 h-6 text-yellow-400 mx-auto mb-3" />
+            <h3 className="text-yellow-400 font-semibold text-lg mb-2">
+              Case-Focused Strategy
+            </h3>
+            <p className="text-sm text-gray-300">
+              Every case is handled with personalized attention.
+            </p>
+          </div>
+
+          <div className="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
+            <Lock className="w-6 h-6 text-yellow-400 mx-auto mb-3" />
+            <h3 className="text-yellow-400 font-semibold text-lg mb-2">
+              Client Confidentiality
+            </h3>
+            <p className="text-sm text-gray-300">
+              Privacy, trust and transparency are always ensured.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

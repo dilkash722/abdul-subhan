@@ -60,7 +60,7 @@ export default function Contact() {
               Phone
             </p>
             <p className="text-gray-300 text-sm break-all no-underline">
-              +91 XXXXXXXXXX
+              +91 9631499719
             </p>
           </div>
 
@@ -78,7 +78,7 @@ export default function Contact() {
               WhatsApp
             </p>
             <p className="text-gray-300 text-sm break-all no-underline">
-              +91 XXXXXXXXXX
+              +91 9631499719
             </p>
           </div>
 
@@ -99,7 +99,7 @@ export default function Contact() {
               Email
             </p>
             <p className="text-gray-300 text-sm break-all no-underline">
-              advocate.subhan@example.com
+              abdulsubhan92@gmail.com
             </p>
           </div>
 

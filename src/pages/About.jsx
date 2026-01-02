@@ -54,7 +54,7 @@ export default function About() {
             <h3 className="text-xl font-bold text-yellow-400">LLB</h3>
             <p className="text-gray-200 text-sm">Bachelor of Law</p>
             <p className="text-gray-400 text-xs mt-2">
-              Aligarh Muslim University
+              Purnea University Purnea,Bihar
             </p>
           </div>
 
@@ -76,7 +76,9 @@ export default function About() {
 
             <h3 className="text-xl font-bold text-yellow-400">M.A</h3>
             <p className="text-gray-200 text-sm">Master of Arts</p>
-            <p className="text-gray-400 text-xs mt-2">Delhi University</p>
+            <p className="text-gray-400 text-xs mt-2">
+              Purnea University Purnea,Bihar
+            </p>
           </div>
 
           {/* BA CARD */}
@@ -97,7 +99,9 @@ export default function About() {
 
             <h3 className="text-xl font-bold text-yellow-400">B.A</h3>
             <p className="text-gray-200 text-sm">Bachelor of Arts</p>
-            <p className="text-gray-400 text-xs mt-2">Patna University</p>
+            <p className="text-gray-400 text-xs mt-2">
+              Purnea University Purnea,Bihar
+            </p>
           </div>
         </div>
 

@@ -33,6 +33,12 @@ export default function Footer() {
         <p className="text-gray-400 text-sm tracking-wide">
           © {new Date().getFullYear()} All Rights Reserved.
         </p>
+
+        {/* Developer Credit */}
+        <p className="mt-2 text-xs text-gray-500 tracking-wide">
+          Website designed & developed by{" "}
+          <span className="text-gray-300">Md Dilkash</span>
+        </p>
       </div>
     </footer>
   );
