@@ -1,4 +1,7 @@
-/* Apply Merriweather globally */
+/* ============================= */
+/* Global Font & Reset */
+/* ============================= */
+
 html,
 body {
   font-family: "Merriweather", serif !important;
@@ -9,10 +12,47 @@ body {
   padding: 0;
 }
 
-/* Optional — If any element still overrides font */
+/* Optional — force font everywhere */
 * {
   font-family: "Merriweather", serif !important;
 }
 
-/* Import Tailwind */
+/* ============================= */
+/* Mobile + Mobile Desktop-Mode Fix */
+/* ============================= */
+
+@media (max-width: 1024px) {
+  /* Fix 100vh / min-h-screen issue */
+  .min-h-screen,
+  [class*="h-screen"] {
+    min-height: auto !important;
+    height: auto !important;
+  }
+
+  /* 🔥 REMOVE NAVBAR DIVIDER COMPLETELY */
+  nav {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background-image: none !important;
+  }
+
+  /* Kill pseudo-element divider */
+  nav::before,
+  nav::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  /* Extra safety: remove border/shadow from children */
+  nav * {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* ============================= */
+/* Tailwind Import */
+/* ============================= */
+
 @import "tailwindcss";
